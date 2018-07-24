@@ -3,8 +3,10 @@ import 'package:flutter_html_view/html_parser.dart';
 
 class HtmlView extends StatelessWidget {
   final String data;
+  final TextStyle pStyle;
+  final TextStyle aStyle;
 
-  HtmlView({this.data});
+  HtmlView({this.data, this.pStyle, this.aStyle});
 
   @override
   Widget build(BuildContext context) {

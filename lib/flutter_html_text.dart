@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_custom_tabs/flutter_custom_tabs.dart' as cTab;
 import 'package:url_launcher/url_launcher.dart';
 
+TextStyle textStyle = TextStyle(fontSize: 12.0, color: Colors.white);
+
 class HtmlText extends StatelessWidget {
   final String data;
 
@@ -72,7 +74,7 @@ class HtmlText extends StatelessWidget {
 
     return new TextSpan(
         text: '',
-        style: DefaultTextStyle.of(context).style,
+        style: DefaultTextStyle.of(context).style.merge(textStyle),
         children: children);
   }
 
