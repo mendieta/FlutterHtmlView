@@ -419,7 +419,7 @@ class HtmlParser {
     String value;
 
     double fontSize = 0.0;
-    Color color = new Color(0xFF000000);
+    Color color = new Color(0xFFFFFFFF);
     FontWeight fontWeight = FontWeight.normal;
     FontStyle fontStyle = FontStyle.normal;
     TextDecoration textDecoration = TextDecoration.none;
